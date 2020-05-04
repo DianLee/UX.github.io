@@ -486,7 +486,8 @@ article .top{
 }
 .officelink img{
   width:100%;
-  max-width: 200px; 
+  max-width: 200px;
+  margin: 15px; 
 }
 @media screen and (max-width: 768px) {
   /*article h1{
@@ -501,5 +502,5 @@ article h2{
   text-align: center;
   margin-bottom: 15px;
   }*/
-  
+
 }
