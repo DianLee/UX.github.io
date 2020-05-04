@@ -489,17 +489,17 @@ article .top{
   max-width: 200px; 
 }
 @media screen and (max-width: 768px) {
-  article h1{
+  /*article h1{
   font-size: 28px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
-}
+  }
 article h2{
   font-size: 28px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 15px;
-}
-
+  }*/
+  
 }
