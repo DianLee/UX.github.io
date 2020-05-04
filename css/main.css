@@ -476,18 +476,20 @@ article .top{
   max-width: 30px;
   top:-5px;
 }
-.screenshot{
+.screenshot img{
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
 }
 .officelink{
   margin:0 auto;
   width: 100%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 .officelink img{
   width:100%;
   max-width: 200px;
   margin: 15px; 
+  margin-top: 100px;
 }
 @media screen and (max-width: 768px) {
   /*article h1{
