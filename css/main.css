@@ -310,6 +310,24 @@ input :focus{
   margin: 0 auto;
   top:50px;
   }
+  .audi_rp{
+    background-size: cover;
+  }
+  .audi_chatbot{
+    background-size: cover;
+  }
+  .muji{
+    background-size: cover;
+  }
+  .taxi{
+    background-size: cover;
+  }
+  .sbo{
+    background-size: cover;
+  }
+  .koko{
+    background-size: cover;
+  }
 }
 
 .showcase .showcase-text {
@@ -457,4 +475,31 @@ article .top{
   width: 100%; 
   max-width: 30px;
   top:-5px;
+}
+.screenshot{
+}
+.officelink{
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.officelink img{
+  width:100%;
+  max-width: 200px; 
+}
+@media screen and (max-width: 768px) {
+  article h1{
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+article h2{
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 }
