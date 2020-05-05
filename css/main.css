@@ -481,6 +481,28 @@ article .top{
   max-width: 30px;
   top:-5px;
 }
+.otherworks{
+  margin:0 auto;
+  margin-top: 100px;
+  /*width: 100%;*/
+
+  /*max-width: 120px;*/
+}
+.otherworks a{
+  text-decoration:none;
+  color:#FFF;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #FFF;
+  position: relative;
+  margin:0 auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+}
+.otherworks a :hover{
+  color:#FFF;
+}
 .screenshot img{
   box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
 }
