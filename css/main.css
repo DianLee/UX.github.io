@@ -92,6 +92,26 @@ nav {
  height: 136px;
  width: 100%;
 }
+#otherworks_content{
+  display: none;
+  width: 100%;
+  margin-top: 60px;
+}
+.otherworks_content h1{
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.otherworks_content h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #344e6b;
+}
+.otherworks_content p{
+  font-size: 16px;
+  font-weight: 400;
+  color:#4d6175;
+}
 .flag{
   position: absolute;
   font-size: 12px;
@@ -112,6 +132,54 @@ nav {
   -moz-transition: background-size 1s;
   -o-transition: background-size 1s;
   transition: background-size 1s;
+}
+#myBtnContainer{
+  margin-bottom: 30px;
+}
+.otherworks_content img{
+  margin-bottom: 15px;
+  background: rgba(0,0,0,0);
+}
+
+
+
+
+
+.otherworks_content_hover{
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+.otherworks_content_hover:hover{
+  opacity: 0.7;
+  transition: opacity 0.2s linear;
+}
+
+
+
+
+.column {
+  display: none;
+  padding: 15px;
+  width: 33.3%;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  margin: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 .item_b{
   width: 100%;
@@ -192,6 +260,21 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 102%;
+}
+
+
+.bi::before {
+  display: inline-block;
+  content: "";
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  margin: 0 10px;
+}
+svg{
+  margin-right: 5px;
+  top: -1px;
+  position: relative;
 }
 .about h1{
   font-size: 28px;
@@ -333,7 +416,13 @@ input :focus{
   .koko{
     background-size: cover;
   }
+  .column {
+  /*display: none;*/
+  padding: 15px;
+  width: 50%;
+  }
 }
+
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -402,6 +491,10 @@ input :focus{
   top: 0;
   left: 0;
   opacity: 0.3;
+}
+.icon_send img{
+  width: 100%;
+  max-width: 52px;
 }
 footer p{
 font-size: 16px;
@@ -488,8 +581,8 @@ article .top{
 
   /*max-width: 120px;*/
 }
-.otherworks a{
-  text-decoration:none;
+.otherworks .buttonstyle{
+  /*text-decoration:none;*/
   color:#FFF;
   border-radius: 5px;
   border: 1px solid #333;

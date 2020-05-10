@@ -26,10 +26,19 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#show").click(function(){
+      $("#otherworks_content").show();
+      $("#show").hide();
+    });
+  });
+  </script>
 
 </head>
 
-<body>
+<body onload="init()">
   <div class="container">
   <!-- Navigation -->
     <nav class="menufonts">
@@ -132,9 +141,227 @@
           </div>
         </a>
       </div>
-      <div class="otherworks">
-        <a href="https://dianlee.github.io/portfolio_web/" target="_blank">See more works</a>
+      <div class="row otherworks">
+        <button class="buttonstyle" id="show">See more works</button>
       </div>
+      <div class="col-12 otherworks_content" id="otherworks_content">
+          <h1>
+            My other works
+          </h1>
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('app')"> APP</button>
+            <button class="btn" onclick="filterSelection('web')"> Website</button>
+            <!-- <button class="btn" onclick="filterSelection('flim')"> Flim</button> -->
+          </div>
+          <div class="row ">
+            <div class="column web">
+              <div class="content">
+              <a target="_blank"href="https://www.goodchos.com.tw/"><img class="otherworks_content_hover" src="img/otherworks/goodchos.jpg" alt="Web" style="width:100%"></a>
+                <h4>GOOD CHO'S</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX/UI Design.
+                </p>
+              </div>
+            </div>
+            <div class="column web">
+              <div class="content">
+              <a target="_blank"href="https://6m2zp4.axshare.com"><img class="otherworks_content_hover" src="img/otherworks/starlux.jpg" alt="Web" style="width:100%"></a>
+                <h4>STARLUX - bé shopping</h4>
+                <p>
+                  <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M12.646 1.146a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708L14.793 4l-2.147-2.146a.5.5 0 010-.708zm0 8a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708L14.793 12l-2.147-2.146a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M0 4a.5.5 0 01.5-.5h2c3.053 0 4.564 2.258 5.856 4.226l.08.123c.636.97 1.224 1.865 1.932 2.539.718.682 1.538 1.112 2.632 1.112h2a.5.5 0 010 1h-2c-1.406 0-2.461-.57-3.321-1.388-.795-.755-1.441-1.742-2.055-2.679l-.105-.159C6.186 6.242 4.947 4.5 2.5 4.5h-2A.5.5 0 010 4z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M0 12a.5.5 0 00.5.5h2c3.053 0 4.564-2.258 5.856-4.226l.08-.123c.636-.97 1.224-1.865 1.932-2.539C11.086 4.93 11.906 4.5 13 4.5h2a.5.5 0 000-1h-2c-1.406 0-2.461.57-3.321 1.388-.795.755-1.441 1.742-2.055 2.679l-.105.159C6.186 9.758 4.947 11.5 2.5 11.5h-2a.5.5 0 00-.5.5z" clip-rule="evenodd"/>
+                  </svg>
+                  Interaction design & prototyping.
+                </p>
+              </div>
+            </div>
+            <div class="column web">
+              <div class="content">
+              <a target="_blank"href="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/index.html"><img class="otherworks_content_hover" src="img/otherworks/taishin_loans.jpg" alt="Web" style="width:100%"></a>
+                <h4>Taishin Housing Loans</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX Design.
+                </p>
+              </div>
+            </div>
+            <div class="column app">
+              <div class="content">
+              <a target="_blank"href="WF/MR_UsabiltyTesting.pdf"><img class="otherworks_content_hover" src="img/otherworks/mr.jpg" alt="App" style="width:100%"></a>
+                <h4>Cathay Rewards App</h4>
+                <p>
+                  <svg class="bi bi-chat-square-dots" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 00-1 1v8a1 1 0 001 1h2.5a2 2 0 011.6.8L8 14.333 9.9 11.8a2 2 0 011.6-.8H14a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v8a2 2 0 002 2h2.5a1 1 0 01.8.4l1.9 2.533a1 1 0 001.6 0l1.9-2.533a1 1 0 01.8-.4H14a2 2 0 002-2V2a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
+                    <path d="M5 6a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                  </svg>
+                  Customer interview & usability testing.
+                </p>
+              </div>
+            </div>
+
+            <div class="column web">
+              <div class="content">
+             <a target="_blank"href="WF/icap.pdf"><img class="otherworks_content_hover" src="img/otherworks/innodisk.jpg" alt="Web" style="width:100%"></a>
+                <h4>Innodisk iCap</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX Design.
+                </p>
+              </div>
+            </div>
+            <div class="column app">
+              <div class="content">
+                <a target="_blank"href="https://framer.cloud/YvqHQ/"><img class="otherworks_content_hover" src="img/otherworks/taishin.jpg" alt="App" style="width:100%"></a>
+                <h4>Taishin PayPlus</h4>
+                <p>
+                  <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.646 1.146a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708L14.793 4l-2.147-2.146a.5.5 0 010-.708zm0 8a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708L14.793 12l-2.147-2.146a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M0 4a.5.5 0 01.5-.5h2c3.053 0 4.564 2.258 5.856 4.226l.08.123c.636.97 1.224 1.865 1.932 2.539.718.682 1.538 1.112 2.632 1.112h2a.5.5 0 010 1h-2c-1.406 0-2.461-.57-3.321-1.388-.795-.755-1.441-1.742-2.055-2.679l-.105-.159C6.186 6.242 4.947 4.5 2.5 4.5h-2A.5.5 0 010 4z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M0 12a.5.5 0 00.5.5h2c3.053 0 4.564-2.258 5.856-4.226l.08-.123c.636-.97 1.224-1.865 1.932-2.539C11.086 4.93 11.906 4.5 13 4.5h2a.5.5 0 000-1h-2c-1.406 0-2.461.57-3.321 1.388-.795.755-1.441 1.742-2.055 2.679l-.105.159C6.186 9.758 4.947 11.5 2.5 11.5h-2a.5.5 0 00-.5.5z" clip-rule="evenodd"/>
+                  </svg>
+                  Interaction design & prototyping.
+                </p>
+              </div>
+            </div>
+            <div class="column web">
+              <div class="content">
+              <a target="_blank"href="https://www.compal-health.com/"><img class="otherworks_content_hover" src="img/otherworks/healthcare.jpg" alt="Web" style="width:100%"></a>
+                <h4>Compal Healthcare Portal</h4>
+                <p>
+                 <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>  
+                  UX/UI Design & Frontend Coding.
+                </p>
+              </div>
+            </div>
+            <div class="column web">
+              <div class="content">
+              <a target="_blank"href="http://www.redliuli.com/"><img class="otherworks_content_hover" src="img/otherworks/redliuli.jpg" alt="Web" style="width:100%"></a>
+                <h4>Redliuli official website</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX/UI Design & Frontend Coding.
+                </p>
+              </div>
+            </div>
+            <div class="column app">
+              <div class="content">
+              <a target="_blank"href="WF/dial.pdf"><img class="otherworks_content_hover" src="img/otherworks/dial.jpg" alt="App" style="width:100%"></a>
+                <h4>Sensel Dial IOT</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX/UI Design.
+                </p>
+              </div>
+            </div>
+            <div class="column app">
+              <div class="content">
+                <a target="_blank"href="WF/himirror.pdf"><img class="otherworks_content_hover" src="img/otherworks/himirror.jpg" alt="App" style="width:100%"></a>
+                <h4>HiMirror</h4>
+                <p>
+                  <svg class="bi bi-pen" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391L10.086 2.5a2 2 0 012.828 0l.586.586a2 2 0 010 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 011.414 0l.586.586a1 1 0 010 1.414L5 13l-3 1 1-3z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 00-.708 0L5.854 5.855a.5.5 0 01-.708-.708L8.44 1.854a1.5 1.5 0 012.122 0l.293.292a.5.5 0 01-.707.708l-.293-.293z" clip-rule="evenodd"/>
+                    <path d="M13.293 1.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                  </svg>
+                  UX Design.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="column flim col-sm-12">
+              <div class="content">
+                <a target="_blank"href="https://www.youtube.com/embed/OKP7eJ8cD5M"><img class="otherworks_content_hover" src="img/otherworks/ca.jpg" alt="Flim" style="width:100%"></a>
+                <h4>Carousel Fashion Clothes</h4>
+                <p>
+                  <svg class="bi bi-camera-video" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 01.5 11.333V4.667z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z" clip-rule="evenodd"/>
+                  </svg>
+                  Filming and editing.
+                </p>
+              </div>
+            </div>
+            <div class="column flim">
+              <div class="content">
+              <a target="_blank"href="https://www.youtube.com/embed/KPRDQ--9LA0"><img class="otherworks_content_hover" src="img/otherworks/sweet.jpg" alt="Flim" style="width:100%"></a>
+                <h4>SweetAngel Underwear</h4>
+                <p>
+                  <svg class="bi bi-camera-video" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 01.5 11.333V4.667z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z" clip-rule="evenodd"/>
+                  </svg>
+                  Filming and editing.
+                </p>
+              </div>
+            </div>
+            <div class="column flim">
+              <div class="content">
+              <a target="_blank"href="https://www.youtube.com/embed/qNKX68X6tbw"><img class="otherworks_content_hover" src="img/otherworks/real.jpg" alt="Flim" style="width:100%"></a>
+                <h4>RawPiece Fashion</h4>
+                <p>
+                  <svg class="bi bi-camera-video" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 01.5 11.333V4.667z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z" clip-rule="evenodd"/>
+                  </svg>
+                  Filming and editing.
+                </p>
+              </div>
+            </div>
+            <div class="column flim">
+              <div class="content">
+              <a target="_blank"href="https://www.youtube.com/embed/TUwmBs8qC2c"><img class="otherworks_content_hover" src="img/otherworks/bikini.jpg" alt="Flim" style="width:100%"></a>
+                <h4>Kirara Fashion Swimwear</h4>
+                <p>
+                  <svg class="bi bi-camera-video" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 01.5 11.333V4.667z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z" clip-rule="evenodd"/>
+                  </svg>
+                  Filming and editing.
+                </p>
+              </div>
+            </div>
+            <div class="column flim">
+              <div class="content">
+              <a target="_blank"href="https://www.youtube.com/embed/5GeCHgebcWg"><img class="otherworks_content_hover" src="img/otherworks/lifesmith.jpg" alt="Flim" style="width:100%"></a>
+                <h4>LifeSmith</h4>
+                <p>
+                  <svg class="bi bi-camera-video" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 01.5 11.333V4.667z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z" clip-rule="evenodd"/>
+                  </svg>
+                  Filming and editing.
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
       <div class="flag"><img src="img/Works.png"></div>
     </section>
 
@@ -212,19 +439,31 @@
         <div class="col-md-3">
           <p>If you are interesting about me, please feel free to contact me, or through my Linkedin:</p><p><a href="https://www.linkedin.com/in/dian-lee-22197668/">https://www.linkedin.com/in/dian-lee-22197668/</a></p>
         </div>
-        <div class="offset-md-1 col-md-8">
-          <div class="from-group">
-            <label for="usr">NAME</label>
-            <input type="text" class="form-control" id="usr" placeholder="Dian Lee">
+        <div class="offset-md-1 col-md-7 row">
+          <div class="from-group col-12">
+            <label for="emailText">SUBJECT</label>
+            <input id="subText" type="text"  class="form-control" id="mail" placeholder="Subject.." required>
           </div>
-          <div class="from-group">
-            <label for="mail">E-MAIL</label>
-            <input type="text" class="form-control" id="mail" placeholder="dian@gmail.com">
+          <div class="from-group col-md-6 col-sm-12">
+            <label for="nameText">NAME</label>
+            <input type="text" class="form-control" id="nameText" placeholder="Dian Lee" required>
           </div>
-          <div class="from-group">
-            <label for="comment">MESSAGE</label>
-            <textarea rows="5" class="form-control" id="comment" placeholder="Leave your message here.."></textarea>
+          <div class="from-group col-md-6 col-sm-12">
+            <label for="telText">PHONE</label>
+            <input id="telText"type="tel" class="form-control" placeholder="Dian Lee">
           </div>
+          <div class="from-group col-12">
+            <label for="emailText">E-MAIL</label>
+            <input id="emailText" type="email"  class="form-control" id="mail" placeholder="dian@gmail.com" required>
+          </div>
+          <div class="from-group col-12">
+            <label for="bodyText">MESSAGE</label>
+            <textarea id="bodyText" rows="5" class="form-control" placeholder="Leave your message here.."></textarea>
+          </div>
+        </div>
+        <div class="col-md-1 icon_send">
+          <img type="button" onclick="submitHandler();" src="img/send.png">
+          <a id="mailTo"></a>
         </div>
       </section>
 
@@ -235,9 +474,77 @@
     </div>
   </div>
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
 
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+    //宣告預設表單內容為空 （你想要的話也可以加東西）
+    var initSubject='',initBody='';
+ 
+    //按下傳送按鈕後執行
+    function submitHandler(){
+        var to = "andy790809@gmail.com";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+        var name = nameText.value;//讀取ID為 nameTextuser 物件中的值
+        var email = emailText.value;
+        var tel = telText.value;
+        var subject = subText.value;
+//把user填的資料都塞到 mail body 中
+        var body = ""+bodyText.value+'%0A%0A%0A';//%0A是換行 換了三行
+            body += "From："+nameText.value+'%0A';
+            body += "Email："+emailText.value+'%0A';
+            body += "Tel："+telText.value;
+//傳送的主要程式碼
+        mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
+        mailTo.click();
+    }
+//在body onload
+    function init(){
+        subText.value=initSubject;
+        toText.value=initTo;
+        bodyText.value=initBody;
+    }
+  </script>
 </body>
 
 </html>
