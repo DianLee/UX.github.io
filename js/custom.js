@@ -349,6 +349,21 @@ function carousel01() {
   setTimeout(carousel01, 3000); // Change image every 2 seconds
 }
 
+var activeslide02 = 0;
+carousel02();
+
+function carousel02() {
+  var i;
+  var x = document.getElementsByClassName("activeSlides02");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  activeslide02++;
+  if (activeslide02 > x.length) {activeslide02 = 1}
+  x[activeslide02-1].style.display = "block";
+  setTimeout(carousel02, 3000); // Change image every 2 seconds
+}
+
 var slideIndex01 = 1;
 showDivs01(slideIndex01);
 
@@ -410,20 +425,7 @@ function showDivs02(n) {
 
 
 
-var activeslide02 = 0;
-carousel02();
 
-function carousel02() {
-  var i;
-  var x = document.getElementsByClassName("activeSlides02");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  activeslide02++;
-  if (activeslide02 > x.length) {activeslide02 = 1}
-  x[activeslide02-1].style.display = "block";
-  setTimeout(carousel02, 3000); // Change image every 2 seconds
-}
 
 // ======Taxi Line
 

@@ -53,6 +53,7 @@ a {
   font-size: 20px;
   font-weight: 500;
   padding: 0;
+  margin-bottom: 10px;
 }
 #v-pills-tab .y_h:hover{
   background: url(../images/h_yoxi_active.png);
@@ -852,6 +853,7 @@ text-align: center;
   background: linear-gradient(0deg, #F7F4EB 27.9%, #FBF6E4 63.89%, #85DEF4 110.81%), #FFFFFF;
 }
 .mySlides01,.mySlides02,.mySlides03,.mySlides04,.activeSlides01,.activeSlides02 ,.activeSlides03 {display:none}
+
 .case_y h1{
   font-size: 100px;
   font-weight: bold;
@@ -863,6 +865,17 @@ text-align: center;
   text-fill-color: transparent;
 
 }
+.n_h1 h1{
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(90deg, #172d38 0%, rgba(255, 255, 255, 0.64) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .case_y h3{
   font-size: 32px;
 }
@@ -972,6 +985,9 @@ text-align: center;
 .bottom_case_audi{
   background: #333333;
 }
+.bottom_case_nextdrive{
+  background: #333333;
+}
 .bottom_case{
   opacity: 0.8;
   display: flex;
@@ -1051,6 +1067,20 @@ display: none;
 }
 #section-5-define img{
   border-radius: 2rem;
+}
+#section-n-define{
+  background-image: url(../images/case_n_highlight_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*background: linear-gradient(0deg, #F7F4EB 27.9%, #FBF6E4 63.89%, #85DEF4 110.81%), #FFFFFF;*/
+}
+#section-n-infra{
+  background-image: url(../images/case_n_design_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*background: linear-gradient(0deg, #F7F4EB 27.9%, #FBF6E4 63.89%, #85DEF4 110.81%), #FFFFFF;*/
 }
 .t_d_general{
   background-size: cover;
@@ -1209,6 +1239,14 @@ display: none;
   background-position: center;
   background-attachment: fixed;
 }
+#section-n-ui{
+  background: #0d1f3a;
+  color: #FFF;
+  background-image: url(../images/case_n_guideline_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 #section-a-measure{
   background: #0d1f3a;
   color: #FFF;
@@ -1240,7 +1278,70 @@ display: none;
   background-position: center;
   background-attachment: fixed;
 }
+.case_n_guideline{
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
+  margin-bottom: 80px;
+  overflow: hidden;
+  width: 100%;
+}
+.case_n_guide_cont{
+  padding: 40px 40px;
+  width: 100%;
+}
+.case_n_guide_title{
+  background-color: #172D37;
+  width: 100%;
+  padding: 40px 0 40px 40px;
+  display: flex;
+  align-items: center;
+}
+.case_n_guide_title h3{
+  color: #02AFBB;
+  font-size: 60px;
+  font-style:oblique;
+}
 #pb-navbar{
       display: flex;
     flex-wrap: nowrap;
+}
+.h_case{
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 0px solid #fff;*/
+  -webkit-transition: .1s all ease;
+  -o-transition: .1s all ease;
+  transition: .1s all ease;
+}
+.h_case:hover{
+  /*border: 0.5px solid #bbc964;*/
+  -webkit-transition: .1s all ease;
+  -o-transition: .1s all ease;
+  transition: .1s all ease;
+}
+.h_case img{
+  width: 100%;
+  opacity: 0.7;
+  -webkit-transition: .1s all ease;
+  -o-transition: .1s all ease;
+  transition: .1s all ease;
+
+}
+.h_case img:hover{
+  width: 120%;
+  opacity: 1;
+  -webkit-transition: .1s all ease;
+  -o-transition: .1s all ease;
+  transition: .1s all ease;
+}
+.single-portfolio h5{
+  font-size: 16px;
+  opacity: 0.7;
+}
+.single-portfolio h4,.single-portfolio h5{
+ color: #FFF;
 }
