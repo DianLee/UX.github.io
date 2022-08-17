@@ -1068,6 +1068,9 @@ display: none;
 #section-5-define img{
   border-radius: 2rem;
 }
+#section-n-process{
+  background-color: #F6F9EF;
+}
 #section-n-define{
   background-image: url(../images/case_n_highlight_bg.png);
   background-size: cover;
